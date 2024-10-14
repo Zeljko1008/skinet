@@ -31,6 +31,7 @@ services.AddSingleton<IConnectionMultiplexer>(c =>
 });   
 services.AddScoped<IBasketRepository, BasketRepository>(); 
 services.AddScoped<IOrderService, OrderService>();
+services.AddScoped<IPaymentService, PaymentService>();
 services.AddScoped<IUnitOfWork, UnitOfWork>();
 services.AddScoped<IProductRepository, ProductRepository>();
 services.AddScoped<ITokenService, TokenService>();
